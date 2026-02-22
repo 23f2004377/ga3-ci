@@ -1,0 +1,11 @@
+name: simple-ci
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "CI running successfully"
